@@ -11,7 +11,7 @@ export const fetchQuotes = () => (dispatch) => {
             // inside .then(), dispatch new action with data
             // res.data
             console.log(res)
-            dispatch({ type: FETCH_QUOTES_SUCCESS, payload: res.data})
+            dispatch({ type: FETCH_QUOTES_SUCCESS, payload: res.data.quote})
         })
         .catch((err) => console.log(err))
     // inside .then, dispatch new action with data
