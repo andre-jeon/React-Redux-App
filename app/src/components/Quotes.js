@@ -11,9 +11,9 @@ const Quotes = (props) => {
     return (
         <section>
             <h1>🐻Daily Kanye Tweets🐻</h1>
-            {props.isLoading ? <h4>Loading Kanye's Tweets now...</h4> : null}
-            {props.error ? <p style={{ color: 'red' }}>GEORGE BUSH DOESN"T CARE ABOUT BLACK PEOPLE</p> : null}
-            {props.quote ? (<div>{props.quote}</div>) : null}
+            {props.isLoading ? (<h4>Loading Kanye's Tweets now...</h4>) : null}
+            {props.error ? (<p style={{ color: 'red' }}>GEORGE BUSH DOESN"T CARE ABOUT BLACK PEOPLE</p>) : null}
+            {props.quotes.length > 0 ? <div>{props.quote.map(quote => (<h2>{quote}</h2>))}</div> : null}
         </section>
     );
 };
