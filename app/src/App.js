@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Quotes from './components/Quotes'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Quotes />
+      <img src = 'https://pagesix.com/wp-content/uploads/sites/3/2018/10/181030-kanye-west-politics-feature.jpg?quality=90&strip=all&w=1200' />
     </div>
   );
 }
