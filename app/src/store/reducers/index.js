@@ -1,1 +1,1 @@
-export { missionReducer as reducer } from './missionReducer'
+export { quoteReducer as reducer } from './quoteReducer'
